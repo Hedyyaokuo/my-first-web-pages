@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>webdev1.html</title>
+	<link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            background-color: #f1f1f1;
+            color: black;
+            padding: 10px 100px 10px 280px;
+            text-align: left;
+        }
+		.title{
+		    font-family:Time New Roman,Times;
+			padding: 10px 10px 10px 280px;
+			color:black;
+	    }
+        
+        
+        article {
+            max-width: 800px;
+            margin: 20px 50px 0 300px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+		.image-container{
+		    overflow:hidden;
+			   }
+		 note7 {
+		    float: left;
+			margin-right: 10px; }
+		 note8,9,10,11,12,13,14 {
+		    float: left;
+			margin-right: 10px; }
+        footer {
+            background-color:#f1f1f1;
+            color: #fff;
+            padding: 10px 10px 10px 0px;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+        }
+        #sidebar {
+            height: 100vh; 
+            width: 250px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding-top: 20px;
+        }
+
+        #sidebar a {
+            padding: 4px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        #sidebar a:hover {
+            background-color: #555;
+        }
+    </style>
+	<script>
+        function scrollToArticle(articleId) {
+            var article = document.getElementById(articleId);
+            if (article) {
+                article.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="sidebar">
+        Module 1:The structure of a website<br>
+		<nav>
+        <ul>
+            <li><a href="#article1"onclick="scrollToArticle('article1')">day 1</a></li>
+            <li><a href="#article2"onclick="scrollToArticle('article2')">day 2</a></li>
+            <li><a href="#article3"onclick="scrollToArticle('article3')">day 3</a></li>
+			<li><a href="#article4"onclick="scrollToArticle('article4')">day 4</a></li>
+			<li><a href="#article5"onclick="scrollToArticle('article5')">day 5</a></li> 
+        </ul>
+        </nav>
+		Module 2:Adding Style to Your Web
+		<nav>
+		<ul>
+            <li><a href="#article6"onclick="scrollToArticle('article6')">day 1</a></li>
+            <li><a href="#article7"onclick="scrollToArticle('article7')">day 2</a></li>
+            <li><a href="#article8"onclick="scrollToArticle('article8')">day 3</a></li>
+			<li><a href="#article9"onclick="scrollToArticle('article9')">day 4</a></li>
+			<li><a href="#article10"onclick="scrollToArticle('article10')">day 5</a></li> 
+        </ul>
+        </nav>
+		Module 3:Webpage Design
+		<nav>
+		<ul>
+            <li><a href="#article11"onclick="scrollToArticle('article11')">day 1</a></li>
+            <li><a href="#article12"onclick="scrollToArticle('article12')">day 2</a></li>
+            <li><a href="#article13"onclick="scrollToArticle('article13')">day 3</a></li>
+			<li><a href="#article14"onclick="scrollToArticle('article14')">day 4</a></li>
+			<li><a href="#article15"onclick="scrollToArticle('article15')">day 5</a></li> 
+        </ul>
+        </nav>
+		Module 4:Introduction to JavaScript
+		<nav>
+		<ul>
+            <li><a href="#article16"onclick="scrollToArticle('article16')">day 1</a></li>
+            <li><a href="#article17"onclick="scrollToArticle('article17')">day 2</a></li>
+            <li><a href="#article18"onclick="scrollToArticle('article18')">day 3</a></li>
+			<li><a href="#article19"onclick="scrollToArticle('article19')">day 4</a></li>
+			<li><a href="#article20"onclick="scrollToArticle('article20')">day 5</a></li> 
+        </ul>
+        </nav>
+		
+		
+		
+		
+		    
+		
+        
+    </div>
+    
+    <header>
+        <h1>Lerning summary about 4 weeks</h1>
+        <p>Facilitate review</p >
+    </header>
+        <h1 class="title">Module 1:The structure of a websites</h1>
+    <article id="article1">
+        <h2>day 1:Introduction to the Web</h2>
+        <p>On this day, we had a preliminary understanding of the origin of the World Wide Web and its influence on the present, 
+		and we knew the main components of the World Wide Web and how to transfer files between various parts to be presented on the web page. 
+		In addition, the Internet is a big concept, and the unified Resource Locator is the only way that people access websites and there are multiple forms of links.
+        <img src="C:\Users\86158\Desktop\mywebsite\images\DNS.jpg" alt="note" style="width:500px;height=400px;margin-right:10px;"></p>
+	    <p>For URL,It must be converted to an ip address for the host to recognize.</p>
+    </article>
+
+    <article id="article2">
+        <h2>day 2:HyperText Markup Language</h2>
+        <p>HTML is the standard language to create and design web pages, 
+		is the basis of web development, it includes and can connect many resources to present on the web page to bring convenience to users, 
+		it has many different functions of the label, including "html","head","body","foot" these four basic tags, basic tags contain such as the content of the label, 
+		the use of advanced tags can also insert pictures and links and even tables.
+        <img src="C:\Users\86158\Desktop\mywebsite\images\note2.jpg" alt="note" style="width:500px;height=400px;margin-right:10px;"></p>
+    </article>
+	
+	<article id="article3">
+	    <h2>day 3:HTML Tags</h2>
+		<p>Not only do we need to master the basic tags for editing basic text articles, but this one highlights the tags for inserting images and links.
+		Links generally contain two attributes, link and target, the former is the actual address of the related resource, 
+		the latter defines the internal or external connection. In html, image resources are only supported in the form of jpg,gif and png. 
+		The most important part of image links is src. In order to facilitate management, we usually create a separate folder called images folder for images.
+        <img src="C:\Users\86158\Desktop\mywebsite\images\note3.jpg" alt="note" style="width:300px;height=300px;margin-right:100px;"></p>
+		<p>The images folder is at the same level as the rest of the web page, and the images are stored in the images folder at the next level, 
+		   which will help us understand the relative paths later.</p>
+    </article>
+	
+	<article id="article4">
+	     <h2>day 4:The Structure of a Simple Website</h2>
+		 <p>This section summarizes the main contents of the website structure and the importance of organizing web files,
+		 which need to be familiar with the parts of the website.Includes "Root Floder"(Store content),"HTML Files"(language to design),"CSS Files"(language to design),
+		 "JavaScript Files"(Increase interactivity),And we can  also create subdirectories within the root folder to organize our files better.In addition, 
+		 it is also important to understand the use and difference between relative and absolute paths.Relative Paths includes
+		 <ul>
+		    <li>Relative to the Root </li>
+			<li>Relative to the Current Directory </li>
+			<li>Relatiive to a Parent Directory </li>
+		 </ul>
+		 <img src="C:\Users\86158\Desktop\mywebsite\images\note4.jpg" alt="note" style="width:500px;height=400px;margin-right:10px;">
+		 </p>
+	</article>
+	
+	<article id="article5">
+	     <h2>day 5:Create and Publish Your First Website</h2>
+		 <p>In this part,we learned how to use cPanel to publish web pages correctly.The first that should do is to have an account,we should:
+		 <ol>
+		   <li>Access cPanel and login it</li>
+		   <li>Navigate the cPanel Interface</li>
+		   <li>File Management(this is the part that we will use frequently</li>
+		   <li>Email Management(Email Account)</li>
+		   <li>Database Management(MySQL Databases)</li>
+		   <li>Domain Management(Addon Domains)</li>
+		   <li>Website Management(File Manager,FTP)</li>
+		   <li>Security(SSL/TLS,Password&Security)</li>
+		   <li>Software Installation</li></p>
+		 <p>And then,we have some steps to publish the website:
+		 <ol>
+		   <li>Navigate to File Manager</li>
+		   <li>Upload Website Files</li>
+		   <li>Create an Index File</li>
+		   <li>Verify Website Configuration</li>
+		   <li>Set Up Domain</li>
+		   <li>Configure DNS</li>
+		   <li>Set Up SLL(Optional but Recommended)</li>
+		   <li>Test Our Website</li>
+		   After doing them all,our website will be live and ready to be discovered by the world!
+		 </ol>
+		 </p>
+	</article>
+	
+	     <h1 class="title">Module 2:Adding Style to Your Web</h1>
+    <article id="article6">
+	     <h2>day 1:More About Tages and Attributes</h2>
+		 <p>For us.Mastering more html tags is necessary for planning and beautifying pages.These Tags are instructions on how to display content, 
+		 and attributes provide other information about these instructions.Attributes are used to describe the basic effects of web pages. 
+		 Attributes play an important role in adding interactivity in later learning.To learn more about the label, we can look it up here
+		 <a href="https://www.w3schools.com/" target="blank">Visit W2Schools.com!</a>.In Attributes,the name attribute is useful for meta tags and 
+		 other tags that affect the functionality of a website in some way.And the id attribute can be used on ANY tag but every id must be unique on the page. 
+		 <img src="C:\Users\86158\Desktop\mywebsite\images\note5.jpg" alt="note" style="width:500px;height=400px;margin-right:10px;"></p>
+    </article>
+	
+	<article id="article7">
+	     <h2>day 2:Cascade Style Sheets</h2>
+		 <p>In this section, we learned that css can change the appearance of a web page to make it more desirable for people to visit. It usually involves polishing code and adding things to existing code. Cascade Style Sheets is the full name of the CSS.
+		 html determines the content and CSS determines how we present our content. It includes three ways to add what, what and what to the code. inline is 
+		 the highest level, and external is widely used.In CSS,selectors and declarations are fundamental components:
+		 <ol>
+		 <li>Selectors:
+		     <ul> <li>Element Selector:Targets HTML elements</li>
+			      <li><strong>ID Selectors:with a specific ID</strong></li>
+				  <li><strong>Class Selector:elements with specific class</strong></li>
+				  <li>Attribute Selector/Descendant Selector/Pseudo-class Selector</li>
+		     </ul></li>
+	     <li>Declarations:
+		     <ul> <li>Property:aspect of the element</li>
+			      <li>Value:the setting for the property</li>
+			 </ul></li>
+		 <ol>
+		 All of them are in the style section of the head section.</p>
+		 <p>More on css text can still be found here:<a href="https://www.w3schools.com/css/css_text.asp" target="blank">CSS text</a>.
+		 In the future,we can combine more css display with block elements.
+		 <img src="C:\Users\86158\Desktop\mywebsite\images\note6.jpg" alt="note" style="width:300px;height=100px;margin-right:50px;"></p>
+		 <br><p>SCU,(2023),Cascade Style Sheets</p>
+		 <P>The above is the relevant data about the element size for your reference.</p>
+         SCU,2023,'Cascade Style Sheets',Southern Cross University,viewed 22 November 2023		 
+	</article>
+	
+	<article id="article8">
+	     <h2>day 3:Content Alignemnt and Positioning</h2>
+		 <p>This section focuses on the CSS box model and its structure on a web page. It consists of content, padding, border, and margin. 
+		 The content is surrounded by padding, which is then bordered, and finally, there's a margin outside the border. This model gives us a good idea of how much space element tags take up on the page,
+		 how different elements are indirectly aligned, and how they interact with other models on the pageThe box model can be well decorated with
+		 html content, and we can set the box's borders, padding, and margins through some instruction languages.</p>
+		 <p>In CSS we usually create a new row to place the block-level element so that it occupies as much of the available width as possible and so that it is stacked vertically. Examples
+		 include <strong>div</strong>,<strong> p</strong> , and<strong> h1</strong> . Inline elements, on the other hand, should don't start on a
+		 new line and only take up as much width as necessary. They flow within the content and don't force a new line. Examples include<strong>
+		 span</strong> ,<strong> a</strong>, and <strong>strong</strong>.<strong>p</strong>.If you want to know more,please clik:
+		 <a href="https://www.w3schools.com/html/html_blocks.asp" target="blank">HTML Block and Inline Elements.</a>But the most important thing is <strong>div</strong> is
+         "Defines a section in a document"(block-level) and <strong>span</strong> is "Defines a section in a document"(line).</p>
+		 <p>Tips:to address block element overlap in CSS,we can:
+		 <ul>
+		 <li>Adjust the margins or padding of the overlapping elements to create space between them.</li>
+		 <li>Use the position property to control the positioning of elements</li>
+		 <li>If the elements have a positioned(not static) or flex container parent,you can use the z-index proprety to control the stacking order.</li>
+		 <li>If the layout allowsconsider using Flexbox or grid to control the positioning and spacing of elements.</li>
+		 </ul>
+		 <strong>div</strong> is the most important element of the block element,and each div starts with a new line and contains other elements for easy
+		 change and management.</p>
+		 <p>In CSS position,CSS gives us several ways to move elements from the default position.
+		 <ul>
+		 <li>Static Positioning</li>
+		 <li>Relative Positioning</li>
+		 <li>Absolute Positioning</li>
+ 		 <li>Fixed Positoning</li> 
+		 <li>Sticky Positioning</li></p>
+	</article>
+	
+	<article id="article9">
+	     <h2>day 4:Menu and Navigation</h2>
+		 <p>The CSS menu design is a good summary of the web page and the role of the user wizard. It can make visitors more intuitive and more purposeful access to the content they want, 
+		    increasing purpose and interactivity.And the menu is divided into two main forms.
+		 <ol> <li>CSS Menus from Lists:
+		    <ul> <li>List-Based Structure:use <strong>ul</strong> or <strong>ol</strong> to create the structure about the menu.</li>
+		         <li>Nested Lists:use <strong>li</strong> to create list items.</li>
+				 <li>Styling List Items:style the list items to resemble meun items by using CSS.</li>
+				 <li>Display Property:display the horiizontal or vertical menus.</li>
+			</ul> </li>
+			  <li>Pseudo-classes:
+			<ul> <li>hover:style an element when the mouse is over it.</li>
+			     <li>active:Applies styles when an element is being activated.</li>
+				 <li>focus:Applies styles when an element is in focus.</li>
+				 <li>first-child and last-child:target the first and last child elements,respectively.</li>
+				 <li>nth-child():Select elements based on their position in a parent.</li>
+			</ul> </li>
+		</ol>
+	</article>
+	
+	<article id="article10">
+	     <h2>day 5:Reflection</h2>
+		 <p>In this unit we learned about CSS and should get to know it well enough to style our own web pages.</p>
+		 <ul>
+		    <li>CSS(extenal,embedded and inline)</li>
+			<li>Alignment and positioning(box model)</li>
+			<li>Menu and navigation</li>
+		 </ul>	 
+	</article>
+	
+		 <h1 class="title">Module 3:Webpage Design</h1>
+	<article id="article11">
+	     <h2>day 1:Design Principles</h2>
+		 <p>Human-Computer Interaction (HCI) is an interdisciplinary field of study encompassing all aspects of computer technology that seeks to optimize users'
+		 interaction with computers, particularly user experience (UX). HCI encompasses elements like User Centered Design, Usability Testing, UX Evaluation 
+		 (user experience evaluation), Interface Design, Information Architecture Accessibility Cognitive Psychology Human Factors Engineering as well as Cognitive 
+		 Psychology Cognitive Psychoanaltics Human Factors Engineering etc... Furthermore HCI plays a pivotal role in designing software websites and interactive 
+		 technologies as it seeks to produce interfaces that not only function as well but are enjoyable as efficient for users as enhancing user experiences further
+		 improving overall UX. Ultimately understanding this aspect helps enhance UX (user Experience). Recognizing this fact will enhance UX.Website layout design
+		 principles focus on crafting visually attractive, functional interfaces for user comfort and usability. Each of the following aspects are essential in this 
+		 effort: Hierarchy,Balance,Contrast,Alignment,Repetition Proximity Consistency Whitespace(Negative Space), Responsive Design Accessibility.And how can we Design
+		 an effective and visually appealing webpage design. To design an appealing webpage design, it is important to follow certain tips when using graphics (Relevance, Resolution, Consistency and Whitespace);
+		 Text (Readability, Hierarchy Conciseness Contrast); Color Scheme(Color Scheme, Contrast Consistency Limited Palette Accessibility); Color(Color Scheme, 
+		 Contrast Consistency Limited Palette and Accessibility); All together the key is striking the appropriate balance between aesthetics and functionality 
+		 resulting in designing something which not only looks good but enhances user experience as well. All in all the key is striking an equilibrium between aesthetics
+		 and functionality resulting in creating designs which not only looks good but effectively communicates our message.</p>
+	</article>
+	
+	<article id="article12">
+	     <h2>day 2:Common Design Layouts</h2>
+		 <p>Website layout is the framework that determines how content and navigation flow, while shaping its aesthetic appeal. There are three basic forms.
+		 <ul>
+		    <li>The <strong>two-column layout</strong> in webpage involves breaking up content area into two main columns - usually main content column and sidebar. This setup provides for an organized presentation 
+			of information with clear differentiation of primary and additional details or navigation elements, providing for a readable design experience for visitors to your website.It involves two basic steps related 
+			to CSS and HTML for maximum effect.</li>
+			<li>The <strong>three-column layout</strong> in webpage design divides content area into three main columns - typically consisting of one main content column at its core surrounded by two side columns on either
+			side - to ensure well-organized presentation of information; it offers additional space for navigation menus, additional details or advertisements while offering better balance content distribution on websites. 
+			Furthermore, two basic steps about CSS/HTML implementation make up its basic framework.
+		 </ul>
+		 <p>By analogy,we can make a web page with many modules.</p>
+	</article>
+	
+	<article id="article13">
+	     <h2>day 3:Responsive Design</h2>
+		 <p>In this section,we learned about responsive design.Responsive layout plays an important role in meeting user expectations, optimizing search engines and reducing development costs, which can bring users a better
+		 experience.In can take care of <strong>User Experience</strong>
+		 ,<strong>User Experience</strong>,<strong>Cost Efficiency</strong> and so on.</p>
+		 <p>Basic outline for a responsive layout are:
+		 <ul>
+		    <li>Viewport Meta Tag</li>
+			<li>Fluid Grid System</li>
+			<li>Media Queries</li>
+			<li>Flexible Images</li>
+			<li>Responsive Typography</li>
+			<li>Navigation</li>
+			<li>Flexible Layout Components</li>
+			<li>Testing</li>
+		 </ul><p>
+	</article>
+	
+	<article id="article14">
+	     <h2>day 4:Design Patterns and Templates</h2>
+		 <p>As with anything related to designing websites and selecting templates or patterns for them, several key considerations can dramatically enhance both its effectiveness and user experience. We should create templates
+		 and patterns that look appealing while simultaneously offering positive user experience; selecting colors accordingly for customer preferences being one such principle of design while selecting designs on both mobile devices
+		 as opposed to computers requires different strategies altogether.</p>
+		 <p>Designing for mobile and computer desktop web pages alike involves considering several differences between users' behaviors, screen sizes and interaction patterns - while such criteria highlight general distinctions, 
+		 it is crucial that we acknowledge how user experiences across devices increasingly overlap - thanks to responsive design practices many elements can adapt seamlessly across both mobile and desktop platforms for an enjoyable 
+		 browsing experience.<p>
+		 <p>There are some key aspects of web templates:
+		 <ul>
+		    <li>Time-Saving</li>
+			<li>Consistency</li>
+			<li>Customization</li>
+			<li>Accessibility</li>
+			<li>Responsive Design</li>
+			<li>Cost-Effective</li>
+			<li>Updates and Support</li>
+		 </ul>
+	</article>
+	
+	<article id="article15">
+	     <h2>day 5:Reflection and Best Practices</h2>
+		 <p>In the process of compiling code to make a web page, error correction is also an indispensable part of html validation is a very effective way, html validation is the main
+		 purpose of identifying and correcting errors in html markup, to ensure that the web page is well-formatted, follows best practices, and is compatible with various web browsers.</p>
+		 <p>Basic website opening involves several key practices:
+		 <ul>
+		    <li>Define Clear Objectives</li>
+			<li>Responsive Design</li>
+			<li>User-Friendly Nzvigation</li>
+			<li>Fast Loading Speed</li>
+			<li>Cross-Browser Compatibility</li>
+		 </ul>
+	</article>
+	
+	     <h1 class="title">Module 4:Introduction to JavaScript</h1>
+	<article id="article16">
+	     <h1>day 1:Getting started with JavaScript</h1>
+		 <p>JavaScript enables web pages to interact more closely with users by adding interaction between visitors and specific web pages, particularly their current one, using onclick interaction 
+		 (similar to CSS with its addAscript tag in the head), onclick interaction between buttons on websites (the most frequently-used feature), or just use its onclick property as described herein. 
+		 The latter method provides users a quick means of moving between different areas on one web page by simply clicking one button at a time which leads them directly there - the easiest solution herein.</p>
+		 <p>And for script,it denoted by <strong>script</strong> and <strong>/script</strong> tags are used to include or define scripts within an HTML document, typically written using JavaScript for dynamic web page functionality. 
+		 They can either be placed directly between opening and closing script tags or linked externally using "src". Developers use script tags to add interactivity, manipulate Document Object Model (DOM), 
+		 enhance user experience as well as increase overall functionality on websites through scripting languages like Python and Perl allowing them to add an edge with scripted languages allowing your HTML pages using scripted languages as much more functionality.</p>
+		 <p>JavaScript code can be stored in external files with a ".js" extension and linked back into HTML documents using the script tag for easier code organization and reuse - much like CSS but with additional forms available to it. External files provide many 
+		 advantages over inline javaScript such as easy maintenance in separate files with better maintenance; reuse across multiple HTML pages using one script; caching by browsers improves page load times significantly.
+		 <div class="image-container">
+		 <img src="C:\Users\86158\Desktop\mywebsite\images\note13.png" alt="note13" style="width:500px;height=500px;margin-left:50px;">
+		 <img src="C:\Users\86158\Desktop\mywebsite\images\note14.png" alt="note14" style="width:500px;height=500px;margin-left:100px;">
+		 </div></p>
+		 <p>This is a very simple interaction example.</p>
+	</article>
+	
+	<article id="article17">
+	     <h1>day 2:HTML Elements for Interaction</h1>
+		 <p>Several basic HTML elements facilitate user interaction on a webpage.Mastering them is very important for compiling JavaScript.And some basic elements are:
+		 <ul>
+		    <li>Button:Creates a clickable button which can connect with users(can interact).</li>
+			<li>Input:Allows users to input text or make selections.</li>
+			<li>Forms:Wraps form elements,faciltating user input and data submission.</li>
+			<li>Anchor:Creates hyperlinks for navigation.</li>
+            <li>Select and Option:Creates a dropdown list for users to choose from.</li>
+            <li>Checkbox and Radio: Allows users to make multiple selections (checkbox) or choose one option from a list (radio).</li>
+            <li>Textarea: Provides a multi-line text input area.
+		 </ul>
+		<p>And if we want to learn and consolidate more HTML Elements for Interaction.Please<a href="https://runestone.academy/ns/books/published/webfundamentals/Javascript/toctree.html" target="_blank">Click here</a></p>
+    </article>
+	
+	<article id="article18">
+	     <h1>day 3:JavaScript Events</h1>
+		 <p>JavaScript entails many distinct functions to operate effectively and JavaScript events are instances or interactions on web pages which trigger execution of code; commonly these events include user actions like 
+		 clicking buttons or moving their mouse cursor. JavaScript makes web development even more engaging by responding to events through event handling - attaching functions (called event handlers ) that define exactly what
+		 will occur when specific events arise. Dynamic web applications rely on dynamic code that responds quickly and dynamically to user input or other changes on a page, and we should pay attention to some aspects such as 
+		 Event Listeners (functions that wait for an event and then execute predetermined code after it happens. They are extremely important), Event Object,Event Types,Event Propagation/Delegation/Bubbling Capturing Inline Handlers
+		 as well as Inline Event Handlers are essential considerations when developing dynamic websites that respond in real time. We should consider some key considerations including Event Listeners(which wait for an event and then execute predetermined code before proceeding).
+		 Finally we should pay special attention on other aspects like Event Handlers(these are functions which wait for specific events before taking action based on them), Event Propagation Delegation/Delegation, Event Bubbling Capturing Inline Event Handlers as they play vital 
+		 roles when developing dynamic website with dynamicity/responsiveness/ Capturing Event Handlers which also play vitally for building dynamic/responsive web apps/ applications with dynamic/ responsive web apps/applications etc). Finally we focus On several other aspects that
+		 create dynamic Web Apps by responding dynamically responsive applications; some other things to consider and this aspect: Events (listeners/wait/waits), Propagation Delegation,Bububling Capturing Event Bub Bubble Capturing Inline Event Handlers which then execute predefined
+		 piece of code or Bububling Capturing/Capturing Inline Event Handlers as necessary and so many more! Forth. And also require for real world business. -based web apps as it would also take great focus On things: Event Types as Event Handlers which then handlers must not forgetting
+		 Inline Event Handlers as Event Propagation Propagation delegations Propagation Delegations Delegations Propagation Delegations Event Bububulling Captures etc and Captures when activate etc so on.IAnd we should focus On
+		 some aspects as <strong>Event Listeners</strong>(they are functions that wait for a specific event to occur and then execute a predefined piece of code.It is very important.<strong>
+		 Event Object</strong>,<strong>Event Types</strong>,<strong>Event Propagation</strong>,<strong>Evemt Delegation</strong>,<strong>Event Bubbling and Capturing</strong>,<strong>Inline Event Handlers</strong>
+		and so on.</p>
+		<p>There are also some important parts that we need to master,and can be well used in compolation,most of them are regular functions:
+		<ol>
+		   <li>JavaScript Funtion:can help to organize code,promote reusability and make it easier to maintain and understand.And we should focus on some parts:<strong>
+           	Function Declaration</strong>,<strong>rameters and Arguments</strong>,<strong>Return Statement</strong>Function Expression</strong>,<strong>Arrow Functions</strong>,
+		    <strong>Anonymous Functions</strong>,<strong>Scope</strong>,<strong>Hoisting</strong>,<strong>Callback Functions</strong>.</li>
+		   <li>JavaScript Variables:can used to store and manage data in programs,have some importants like:<strong>Delaration</strong>,<strong>Initialization</strong>,
+		   <strong>Data Types</strong>,<strong>Scope</strong>,<strong>Reassignment</strong>,<strong>Constants</strong>,<strong>Hoistiing</strong>,<strong>Naming Conventions</strong>
+		   ,<strong>Dynamic Typing</strong></li>
+		</ol>
+		<p>Mastering these colorful functions are good for us to increase the interactivity of web pages.</p>
+    </article>
+	
+	<article id="article19">
+	     <h1>day 4:Interation and Selection</h1>
+		 <p>The Interation and Selection are also important in JavaScript.Conclusion In JavaScript, iteration and selection play an invaluable role in crafting dynamic, interactive applications with high efficiency. 
+		 They give developers tools for controlling program flow, managing various scenarios and developing solid software solutions.</p>
+		 <p>And there are two hole parts about interation and selection:
+		 <ul>
+		    <li>Interation:It allows we to repeatedly execute a block of code.function like <strong>for</strong>,<strong>while</strong>,<strong>do-while</strong></li>
+			<li>Selection:It allows we to execute different code based on different conditions.function like<strong>if</strong>,<strong>else</strong>,<strong>else if</strong></li>
+		 </ul>
+		 <p>Understanding iteration and selection is crucial for controlling the flow of our JavaScript programs, enabling we to execute specific code based on conditions and repeat tasks as needed.</p>
+	</article>
+
+    <article id="article20">
+	     <h1>day 5:Document Object Model(DOM)</h1>
+		 <p>DOM is essential to web developers, empowering them to craft dynamic, interactive applications that respond seamlessly to user interactions and deliver an optimal experience for visitors to websites. 
+		 In this part we introduce two essential parts of DOM that developers need for successful creation of dynamic apps on websites.And this part introduce two parts of DOM,but before this,we should develop function <strong>getElementbyId</strong> and look
+		 at the following three properties like <strong>innerHTML</strong>,<strong>style</strong><strong>attribuute</strong>:
+		 <ol>
+		    <li>Document Object Model Application Programming interface(DOM API):It allows developers to dynamically access,manipulate,and updaye the content,structure,
+			and style of web document.And we should focus on many things.
+		 <p>and if you want to know more.Please <a href="https://www.w3schools.com/jsref/prop_style_fontweight.asp" target="_blank">click here</a></li>
+		    <li>DOM API continued:introduce <strong>createElement</strong>,<strong>appemdChild</strong>,<strong>remove</strong> these three parts:
+			<ul><li>CreateElement method: It enables us to dynamically create HTML elements within a webpage and thus produce dynamic content and increase interactivity on websites.</li>
+			<li>The appendChild method is an essential function that allows us to add new child elements onto existing elements on a web page, giving us more ways to organize content as desired. 
+			It gives us access to add, rearrange and organize elements without disrupting their layout and presentation.</li>
+			<li>And finally, remove is an element removal method in DOM that enables us to delete elements dynamically for updating or changing web page contents or structures, making dynamic 
+			applications much more manageable while improving code cleaning capabilities and maintainability.</li>
+    </article>
+    
+    <article>
+        <a class="active" href="C:\Users\86158\Desktop\mywebsite\index.html">Go back to the Home</a>
+    </article>		
+	    
+		 <footer>
+        <p>© 2023 SCU.My Website</p >
+    </footer>
+
+</body>
+</html>
